@@ -1,0 +1,20 @@
+.myButtons {
+  background: rgb(0, 152, 253);
+  white-space: nowrap;
+  outline: none;
+  border: none;
+  min-width: 100px;
+  max-width: 200px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 24px;
+  color: #fff;
+  font-size: 14px;
+}
+.myButtons:hover {
+  transform: translateY(-2px);
+}
