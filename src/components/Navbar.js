@@ -4,7 +4,7 @@ import { menuData } from "../data/menuData";
 import "../styles/Navbar.css";
 import MyButton from "./UI/MyButton";
 import { FaBars } from "react-icons/fa";
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
   return (
     <div className="navbar_header">
       <div className="navbar_logo">
@@ -12,7 +12,7 @@ const Navbar = () => {
           <b>ALMAZ</b>
         </Link>
       </div>
-        <FaBars className="menu_bars"  />
+      <FaBars className="menu_bars" onClick={toggle} />
       <div className="navbar_menu">
         {menuData.map((item, index) => (
           <Link className="navbar_link" to={item.link} key={index}>
