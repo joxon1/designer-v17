@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { menuData } from "../data/menuData";
 import "../styles/Navbar.css";
 import MyButton from "./UI/MyButton";
-import { AiOutlineBars } from "react-icons/ai";
+import { FaBars } from "react-icons/fa";
 const Navbar = () => {
   return (
     <div className="navbar_header">
@@ -12,9 +12,7 @@ const Navbar = () => {
           <b>ALMAZ</b>
         </Link>
       </div>
-      <div className="menu_bars">
-        <i className="AiOutlineBars">{AiOutlineBars}</i>
-      </div>
+        <FaBars className="menu_bars"  />
       <div className="navbar_menu">
         {menuData.map((item, index) => (
           <Link className="navbar_link" to={item.link} key={index}>
