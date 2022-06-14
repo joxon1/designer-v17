@@ -10,9 +10,7 @@ const Dropdown = ({ show, toggle }) => {
       className="dropdown_container"
       show={show}
       onClick={toggle}
-      style={{ opacity: show ? "1" : "0",
-      top:show  ? "0" : "-100%"
-    }}
+      style={{ opacity: show ? "1" : "0", top: show ? "0" : "-100%" }}
     >
       <div className="icons">
         <FaTimes onClick={toggle} />
